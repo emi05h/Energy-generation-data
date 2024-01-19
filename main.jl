@@ -11,8 +11,8 @@ Pkg.add("DataFrames")
 using CSV, Dates, CairoMakie, DataFrames
 
 begin
-    download("C:\Users\emily\OneDrive\Documents\UL\CS4171\proj2\wind-gen-PROJECT", "wind.csv")
-    download("C:\Users\emily\OneDrive\Documents\UL\CS4171\proj2\system-demand-PROJECT", "sysdem.csv")
+    download("file:////home/ug2023/t23356421/cs4171/proj/proj02/wind-gen-PROJECT.csv", "wind.csv")
+    download("file:////home/ug2023/t23356421/cs4171/proj/proj02/system-demand-PROJECT.csv", "sysdem.csv")
 end
 
 wind = DataFrame(CSV.File("wind.csv")
